@@ -41,6 +41,8 @@ gem "mini_magick"	#需安裝imagemagick
 
 gem "font-awesome-rails"	#用 icon 點綴頁面設計
 
+gem "aasm"		#訂單狀態
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

@@ -3,9 +3,30 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :products
   end
-  resources :products
+  #resources :products
+  resources :products do
+    member do
+      post :add_to_cart
+    end
+  end
+
+  # resources :orders
+  resources :orders do
+      member do
+      get :pay_with_credit_card
+    end
+  end
+
   root "products#index"
-    
+
+  #resources :carts
+  resources :carts do
+    collection do
+      post :checkout
+    end
+  end
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
