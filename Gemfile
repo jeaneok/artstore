@@ -45,6 +45,8 @@ gem "aasm"		#訂單狀態
 
 gem "awesome_rails_console"		#rails console 穿衣服
 
+gem "letter_opener", group: :development  #安裝 gem letter_opener 來預覽郵件
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
