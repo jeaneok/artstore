@@ -43,6 +43,8 @@ gem "font-awesome-rails"	#用 icon 點綴頁面設計
 
 gem "aasm"		#訂單狀態
 
+gem "awesome_rails_console"		#rails console 穿衣服
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
