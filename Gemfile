@@ -43,6 +43,9 @@ gem "font-awesome-rails"	#用 icon 點綴頁面設計
 
 gem "aasm"		#訂單狀態
 
+gem "letter_opener", group: :development	#預覽郵件
+gem "roadie", "2.4.3"	#幫信件加上 css
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
