@@ -14,6 +14,7 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
+
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like
@@ -79,7 +80,10 @@ Rails.application.configure do
 
   #設定智付寶(pay2go)整合模式
   config.after_initialize do
-    Pay2go.integration_mode = :production
+    #Pay2go.integration_mode = :production
+    Pay2go.integration_mode = :development
   end
+
+  config.action_mailer.default_url_options = { host: 'https://secure-mesa-9886.herokuapp.com/' } # 你的 heroku app 網址
 
 end
