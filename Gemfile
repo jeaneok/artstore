@@ -46,6 +46,15 @@ gem "aasm"		#訂單狀態
 gem "letter_opener", group: :development	#預覽郵件
 gem "roadie", "2.4.3"	#幫信件加上 css
 
+gem "pay2go"	#安裝pay2go
+
+gem 'sqlite3', group: :development
+
+group :production do
+   gem "pg"
+   gem "rails_12factor"
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

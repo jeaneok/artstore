@@ -76,4 +76,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #設定智付寶(pay2go)整合模式
+  config.after_initialize do
+    Pay2go.integration_mode = :production
+  end
+
 end
